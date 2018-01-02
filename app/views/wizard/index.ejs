@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/vivver.ico">
+
+    <link rel="stylesheet" href="/material-design-lite/material.min.css">
+    <script src="/material-design-lite/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title">Configuração inicial</span>                    
+                </span>
+            </div>          
+        </header>
+            <main class="mdl-layout__content">
+                    
+
+                <div class="mdl-grid portfolio-max-width">
+                    <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Banco de dados</h2>                                                        
+                        </div>                                                  
+                        <hr>
+                        <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--10-col mdl-card__supporting-text no-padding">                      
+                                <p class="mdl-typography--title">Configuração</p>                                
+                                <form action="#">
+                                    <div class="input-group">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="host" name="host">
+                                            <label class="mdl-textfield__label" for="host">Host</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="port" name="port">
+                                                <label class="mdl-textfield__label" for="port">Porta</label>
+                                                <span class="mdl-textfield__error">A entrada não é um número!</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="username" name="username">
+                                            <label class="mdl-textfield__label" for="username">Usuário</label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="password" id="password" name="password">
+                                            <label class="mdl-textfield__label" for="password">Senha</label>
+                                        </div>
+                                    </div>   
+
+                                    <div class="input-group">
+                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                            Próximo
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="mdl-cell mdl-cell--2-col">
+                                    <img class="article-image" src="images/postgresql.png" border="0" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <footer class="mdl-mini-footer">
+                        <div class="mdl-cell mdl-cell--12-col">                      
+                            <div id="p1" class="mdl-progress mdl-js-progress"></div>       
+                        </div>
+                </footer>
+            -->
+            </main>
+        </div>
+        
+    </body>
+    
+</html>
+    
